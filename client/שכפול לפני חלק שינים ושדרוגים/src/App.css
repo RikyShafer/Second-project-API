@@ -1,0 +1,224 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 20vw 1fr 30px;
+  min-height: 100vh;
+}
+
+.main {
+  text-align: center;
+}
+
+header,
+footer {
+  display: grid;
+}
+
+.todosList {
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.buttonAdd,
+.buttonDel,
+.delConfirm,
+.buttonUpdate,
+.button {
+  background-color: black;
+  color: white;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fa {
+  color: white;
+}
+
+.todositem {
+  background-color: rgb(246, 243, 243);
+  border-radius: 5px;
+  width: 60vw;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 10px;
+  top: 20px;
+}
+
+.buttonAdd a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5rem;
+  left: 100px;
+  position: fixed;
+  top: 40px;
+}
+
+.buttonAdd {
+  bottom: 2vw;
+  left: 3vw;
+  position: fixed;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav a.active {
+  background-color: rgb(246, 243, 243);
+  color: black;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  left: 2vw;
+  position: absolute;
+  bottom: 2vh;
+}
+
+.firstLet {
+  display: flex;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 3vw;
+  height: 3vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsGeneral {
+  display: flex;
+  gap: 20px;
+  margin: 5px;
+  padding: 5px;
+  position: absolute;
+  left: 2vw;
+}
+
+
+.form,
+.formAdd {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17vw;
+  height: 15vw;
+  border-radius: 10px;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px); */
+  width:100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.623);
+  display: grid;
+  position: fixed;
+  place-content: center;
+  z-index: 1000;
+
+}
+.tytyty{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17vw;
+  height: 15vw;
+  border-radius: 10px;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+}
+.tytyty-toAddUsers{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  height: 20vw;
+  border-radius: 10px;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+}
+
+.formAdd {
+  left: 0vw;
+  position: fixed;
+}
+
+input {
+  width: 15vw;
+  font-family: cursive;
+  border-radius: 10px;
+  margin: 3px;
+  padding: 8px;
+}
+
+.buttonGetId {
+  margin: 1vh;
+  right: 10px;
+  position: fixed;
+  z-index: 2;
+}
+
+.search .button,
+.buttonReturn {
+  top: 0vh;
+  right: 18vw;
+  position: absolute;
+}
+.imgPhoto{
+  max-width: 23vw;
+  max-height: 23vh;
+
+}
+.imgtexst{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}

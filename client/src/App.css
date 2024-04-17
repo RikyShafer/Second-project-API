@@ -1,0 +1,388 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  background-color: #afebe0; /* Light turquoise background */
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 20vw 1fr 30px;
+  min-height: 100vh;
+}
+
+.main {
+  text-align: center;
+}
+
+header,
+footer {
+  display: grid;
+}
+
+.todoslist {
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.todos-list {
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.buttonAdd,
+.buttonDel,
+.delConfirm,
+.buttonUpdate,
+.button {
+  background-color: #b6b9b9; /* Light gray */
+  color: #b7f3f1; /* Black */
+  width: 3vw;
+  height: 3vw;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fa {
+
+  color: #b7f3f1; /* Light turquoise */
+  
+}
+
+.todositem {
+  background-color: rgba(158, 228, 217, 0.811); /* Light turquoise background */
+  border-radius: 5px;
+  width: 60vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.detailsGeneral {
+  display: flex;
+  gap: 10px;
+  color: #effafae4;
+}
+
+.details {
+  margin: 0;
+  padding: 5px;
+  max-height: 150px; 
+  overflow-y: auto; 
+  margin-left: 25px;
+  margin-bottom: 35px;
+  color: #effafae4;
+
+
+}
+
+.buttonAdd a {
+  text-decoration: none;
+  color: #000; /* Black */
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5rem;
+  left: 100px;
+  position: fixed;
+  top: 40px;
+  margin-top: 7vh;
+}
+
+.buttonAdd {
+  bottom: 2vw;
+  left: 3vw;
+  position: fixed;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #7D7D7D; /* Mountain gray */
+}
+
+.nav a.active {
+  background-color: #afdbd5; /* Darker pink */
+  color: #ddf3ef; /* Light pink */
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  left: 2vw;
+  position: absolute;
+  bottom: 2vh;
+}
+
+.completed {
+  border-radius: 20px;
+  background-color: rgb(186, 224, 218); /* Adjust as needed */
+  color: #F4ECF7; /* Light pink */
+  width: 8vw;
+}
+
+.firstLet {
+  display: flex;
+  background-color: rgb(125, 219, 205); /* Light turquoise */
+  color: #F4ECF7; /* Light pink */
+  border-radius: 20px;
+  width: 3vw;
+  height: 3vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.form,
+.formAdd {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.623);
+  color: azure;
+  display: grid;
+  position: fixed;
+  place-content: center;
+  z-index: 1000;
+}
+
+.tytyty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17vw;
+  height: 15vw;
+  border-radius: 10px;
+  background-color: #82d7c5e4; /* Light turquoise */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+}
+
+.tytyty-toAddUsers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  height: 20vw;
+  border-radius: 10px;
+  background-color: #82d7c5e4; /* Light turquoise */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+}
+
+.formAdd {
+  left: 0vw;
+  position: fixed;
+}
+
+input {
+  width: 12vw;
+  font-family: cursive;
+  border-radius: 20px;
+  margin: 3px;
+  padding: 8px;
+  height: 1vh;
+}
+
+.buttonGetId {
+  margin: 2vh;
+  padding: 2vh;
+  right: 10px;
+  position: fixed;
+  z-index: 1;
+}
+
+.search .button,
+.buttonReturn {
+  top: 0vh;
+  right: 18vw;
+  position: absolute;
+}
+
+.imgPhoto {
+  max-width: 23vw;
+  max-height: 23vh;
+
+  
+}
+
+.imgtexst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.sort {
+  margin: 3px;
+  padding: 8px;
+  position: fixed;
+  left: 14px;
+}
+
+.sort-input {
+  width: 10vw;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 412px) {
+  .nav {
+    gap: 10px;
+    top: 15px;
+    margin-top: 0vh;
+    flex-direction: row;
+    font-size: 15px;
+    max-width: 50px;
+    left:100px;
+  }
+
+  .todoslist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+    margin-left:1px;
+    margin-right: 1px;
+  }
+
+  .todositem {
+    /* width: calc(100% - 0px);  */
+    max-width: 60vw; /* Limit maximum width */
+  }
+
+  #fa {
+    /* font-size: 10px; */
+    color: #b7f3f1; /* Light turquoise */
+
+  }
+ 
+  .details {
+    margin: 5px;
+    padding: 5px;
+    max-height: 50px; 
+    overflow-y: auto; 
+    margin-top: 20px;
+    margin-bottom:10px;
+  }
+h2.details{
+  font-size: 10px;
+}
+h3.details{
+  font-size: 8px;
+}
+  .tytyty {
+    gap: 2px;
+    bottom: 0;
+    left: 7vw;
+    width: 70vw; /* Adjust the width */
+    height: 40vh; /* Adjust the height */
+  }
+
+  .imgPhoto {
+    padding-top: 10px;
+    width: 20vw;
+    height: 15vw;
+
+ 
+
+}
+
+  .form {
+    max-width: 100vw; /* Adjust the maximum width */
+    max-height: 100vh;
+  }
+
+  .tytyty-toAddUsers {
+    width: 70vw;
+    height: 60vw;
+  }
+
+  .buttonAdd,
+  .buttonDel,
+  .delConfirm,
+  .buttonUpdate,
+  .button {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .buttonAdd {
+    position: fixed;
+  }
+
+  input {
+    width: 30vw;
+    font-family: cursive;
+    border-radius: 14px;
+    margin: 3px;
+    padding: 8px;
+    height: 0.5vh;
+  }
+
+  .buttonGetId {
+    margin: 1vh;
+    padding: 1vh;
+    right: 30px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .completed {
+    width: 25vw;
+    height: 3vh;
+  }
+
+  .Home {
+    padding-top: 70px;
+    margin-top: 40px;
+  }
+
+  .Home1 {
+    font-size: 15px;
+  }
+
+  .Home2 {
+    font-size: 10px;
+  }
+
+  .home3 {
+    font-size: 10px;
+  }
+
+  .sort {
+    margin: 3px;
+    padding: 8px;
+    position: fixed;
+    left: 14px;
+  }
+
+  .sort-input {
+    width: 20vw;
+    font-family: cursive;
+    border-radius: 10px;
+  }
+}
